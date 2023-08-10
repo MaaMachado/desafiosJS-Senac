@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    width: 60%;
+    height: min-content;
+    margin: 10% auto;
+    padding: 10px auto;
+  text-align: center;
+  }
+  h1{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: oblique;
+  }
+  .btn2{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #criar {
+--width: 80px;
+--timing: 2s;
+border: 0;
+width: var(--width);
+padding-block: 1em;
+color: #fff;
+font-weight: bold;
+font-size: 0.8em;
+background: #000;
+transition: all 0.2s;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#criar:hover, #acessar:hover {
+background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+animation: var(--timing) linear dance6123 infinite;
+transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+to {
+  background-position: var(--width);
+}
+}
+#resultado{
+font-size: large;
+font-style: normal;
+} 
+#acessar{
+--width: max-content;
+--timing: 2s;
+border: 0;
+width: var(--width);
+padding-block: 1em;
+color: #fff;
+font-weight: bold;
+font-size: 0.8em;
+background: #000;
+transition: all 0.2s;
+border-radius: 3px;
+cursor: pointer;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    width: 60%;
+    height: min-content;
+    margin: 5% auto;
+    padding: 10px auto;
+  text-align: center;
+  }
+  h1{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: oblique;
+  }
+  .btn2{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #criar {
+--width: 80px;
+--timing: 2s;
+border: 0;
+width: var(--width);
+padding-block: 1em;
+color: #fff;
+font-weight: bold;
+font-size: 0.8em;
+background: #000;
+transition: all 0.2s;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#criar:hover, #acessar:hover {
+background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+animation: var(--timing) linear dance6123 infinite;
+transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+to {
+  background-position: var(--width);
+}
+}
+#resultado{
+font-size: large;
+font-style: normal;
+border: 1px solid #000;
+padding: 5% auto;
+} 
+.labelN{
+margin-top: 15px;
+font-size: medium;
+font-weight: 600;
+font-style: italic;
+}
+#inputNumber, #inputNumber1, #inputNumber2, #inputNumberF{
+border: 3px solid #000;
+background: none;
+padding: 0.8rem;
+font-size: 1rem;
+color: black;
+}
+
+#inputNumber:focus, #inputNumber:valid, 
+#inputNumber1:focus, #inputNumber1:valid,
+#inputNumber2:focus, #inputNumber2:valid,
+#inputNumberF:focus, #inputNumberF:valid {
+outline: none;
+--angle: 0deg;
+border-bottom: 3px solid;
+border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+animation: 3s rotate9234 linear infinite;
+}
+#acessar{
+  --width: max-content;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8em;
+  background: #000;
+  transition: all 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+}
