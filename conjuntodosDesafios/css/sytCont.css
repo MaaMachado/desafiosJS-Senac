@@ -1,0 +1,83 @@
+/* Estilização Página Conteúdo */
+
+#fundo{
+  margin: 44px auto 50px;
+  width: 55%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+
+section{
+  margin: 20px auto;
+}
+
+/* CAIXAS */
+#conteudo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: min-content;
+  margin: 0 auto 10px;
+}
+#conteudo-box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  width: calc(40% - 20px);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 3px solid #01860e;
+}
+
+  .box:nth-child(1) { background: linear-gradient(45deg, #f75a57, #fb3636); }
+  .box:nth-child(2) { background: linear-gradient(45deg, #ffb700, #ff8800); }
+  .box:nth-child(3) { background: linear-gradient(45deg, #fada49, #c6c008); }
+  .box:nth-child(4) { background: linear-gradient(45deg, #62f662, #01860e); }
+  .box:nth-child(5) { background: linear-gradient(45deg, #4dd0fb, #0000FF); }
+  .box:nth-child(6) { background: linear-gradient(45deg, #e075e0, #8A2BE2); }
+
+.box h2 {
+  margin: 0;
+  color: white;
+}
+
+.boxE {
+  width: calc(40% - 20px);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.boxE:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 3px solid #01860e;
+}
+
+.boxE:nth-child(1) { background: linear-gradient(45deg, #f757cf, #fb36d0); }
+  .boxE:nth-child(2) { background: linear-gradient(45deg, #bae075, #aee22b); }
+  .boxE:nth-child(3) { background: linear-gradient(45deg, #49fafa, #08c6b9); }
+  .boxE:nth-child(4) { background: linear-gradient(45deg, #f66273, #86013d); }
+  .boxE:nth-child(5) { background: linear-gradient(45deg, #4dfb9e, #00ff80); }
+
+.boxE h2 {
+  margin: 0;
+  color: white;
+}

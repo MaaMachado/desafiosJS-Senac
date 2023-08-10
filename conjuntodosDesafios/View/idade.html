@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../css/img/problema.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styMenu.css">
+  <link rel="stylesheet" href="../css/styPg.css">
+  <script src="../Controller/scrStart.js"></script>
+  <title>Desafio 6</title>
+</head>
+<body>
+
+  <header>
+    <div class="menu-bar">
+      <div class="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="logo">
+      <img src="../css/img/problema.png" alt="Logo da DJ">
+    </div>
+  
+    <button class="voltar" onclick="voltarInicio()"></button>
+
+    </div>
+  
+    <div class="menu" id="menu">
+      <br><br><br>
+        <ul>
+          <br>
+            <li><a href="conteudo.html"><strong>Página Inicial</strong></a></li>
+            <hr>
+            <li><strong>DESAFIOS</strong></li>
+            <br>
+            <li><a href="imprimir.html">Desafio 1</a></li>
+            <li><a href="calcular.html">Desafio 2</a></li>
+            <li><a href="decrescente.html">Desafio 3</a></li>
+            <li><a href="tabuada.html">Desafio 4</a></li>
+            <li><a href="divisivel.html">Desafio 5</a></li>
+            <li><a href="idade.html">Desafio 6</a></li>
+            
+        </ul>
+    </div>
+  </header>
+
+  <section>
+  
+    <nav id="cabeca">
+    <button onclick="voltar()" class="voltarD"> < Voltar </button>
+    <div id="fundo"><h1 id="number6">Desafio 6</h1></div>
+    <button onclick="prox()" class="voltarD">HOME ></button>
+    </nav>
+
+
+    <div id="conteudo-box">
+      <h1 class="txt6">Calculador de idade</h1>
+      <hr>
+      <div id="botoes">
+        <div class="dia">
+          <label for="dia">Dia:</label>
+          <br>
+          <input type="number" id="dia" min="1" max="31" required> 
+      </div>
+      <div class="mes">
+        <label for="mes">Mês:</label>
+        <br>
+        <input type="number" id="mes" min="1" max="12" required>
+    </div>
+ 
+      <div class="ano">
+        <label for="ano">Ano:</label> 
+        <br>
+        <input type="number" id="ano" min="1900" max="9999" required>
+    </div>
+
+      <button onclick="calcular()" id="calc">CALCULAR</button>
+      </div>
+      
+    </div>
+  
+</section>
+        <div id="resultadoE"></div>
+        
+  
+  <script src="../Controller/des6.js"></script>
+
+</body>
+</html>

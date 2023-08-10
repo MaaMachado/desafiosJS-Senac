@@ -1,0 +1,406 @@
+/* CONTEUDO DA PÁGINA DO DESAFIO 1 */
+
+#cabeca{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Estilos para o ícone de voltar e próximo */
+.voltarD {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  cursor: pointer;
+  --color: #afffff;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  width: 12%;
+  height: 16%;
+  padding: .5em 1.9em;
+  margin: 7.5% auto 20px;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+.voltarD::after,
+.voltarD::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.voltarD::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+.voltarD::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+.voltarD:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+.voltarD:where(:hover, :focus) {
+  color: #fff;
+}
+
+/* COMEÇO DA ESTILIZAÇÃO DO CONTEÚDO REAL DA PÁGINA */
+section{
+  margin: 20px auto;
+}
+
+#fundo{
+  background-image: url(../css/img/fundo.png);
+  background-size: cover;
+  margin: 44px 0 20px;
+  width: 52%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+
+/* REPETIR MAS MUDAR A COR */
+#number1{
+  width: 60%;
+  height: 66%;
+  background: linear-gradient(45deg, #f75a57, #fb3636);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#number2{
+  width: 60%;
+  height: 66%;
+  background: linear-gradient(45deg, #ffb700, #ff8800);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#number3{
+  width: 60%;
+  height: 66%;
+  background: linear-gradient(45deg, #fada49, #c6c008);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#number4{
+  width: 60%;
+  height: 66%;
+  background:  linear-gradient(45deg, #62f662, #01860e);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#number5{
+  width: 60%;
+  height: 66%;
+  background:  linear-gradient(45deg, #4dd0fb, #0000FF);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#number6{
+  width: 80%;
+  height: 66%;
+  background:  linear-gradient(45deg, #e075e0, #8A2BE2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#conteudo-box{
+  width: 52%;
+  height: min-content;
+  margin: 20px auto;
+  text-align: center;
+}
+.txt1{
+  color: #700303;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.txt2{
+  color: #7d3803;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.txt3{
+  color: #d4ad00;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.txt4{
+  color: #1dae03;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.txt5{
+  color: #034aae;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.txt6{
+  color: #5603ae;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#botoes{
+  display: flex;
+  justify-content: space-between;
+}
+
+#resultado{
+  width: 70%;
+  height: min-content;
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: large;
+  font-weight: normal;
+}
+#resultado2{
+  width: 70%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: large;
+  font-weight: normal;
+}
+#destaque{
+  color: #d67506;
+  font-weight: 500;
+}
+
+#dia, #mes, #ano{
+  padding: 10px 20px;
+  border: 1px solid rgb(92, 0, 128);
+  border-radius: 5px 1px;
+  flex: 1;
+  margin-top: 5px;
+}
+#labelN{
+  margin-top: 15px;
+  font-size: medium;
+  font-weight: 600;
+  font-style: italic;
+}
+#inputNumber{
+  border: 3px solid #000;
+  background: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: black;
+}
+
+#inputNumber:focus,
+#inputNumber:valid {
+  outline: none;
+  --angle: 0deg;
+  border-bottom: 3px solid;
+  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  animation: 3s rotate9234 linear infinite;
+}
+
+@keyframes rotate9234 {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+#calc {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(85, 0, 128);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resultadoE {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 55px;
+}
+.purple-text{
+  color: #430b5e;
+}
+#criar {
+  --width: 80px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8em;
+  background: #000;
+  transition: all 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#criar:hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
